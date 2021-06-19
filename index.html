@@ -45,7 +45,7 @@
         alt="logo-viajes-chile"
       />
       <a class="navbar-brand text-light" href="#">Viajes Chile</a>
-      
+
       <button
         class="navbar-toggler text-light"
         type="button"
@@ -65,28 +65,22 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#quienes-somos">Quienes Somos</a>
+            <a class="nav-link text-light" href="#quienes-somos"
+              >Quienes Somos</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-light"
-              href="#contacto"
-              >Contacto</a
-            >
+            <a class="nav-link text-light" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!--Carousel-->
-    <div
-      id="Inicio"
-      class="carousel slide"
-      data-ride="carousel"
-    >
+    <div id="Inicio" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
@@ -130,7 +124,10 @@
       </a>
     </div>
     <!--Quienes Somos-->
-    <section id="quienes-somos" class="w-100 m-0 py-5 bg-dark text-white d-none d-sm-block">
+    <section
+      id="quienes-somos"
+      class="w-100 m-0 py-5 bg-dark text-white d-none d-sm-block"
+    >
       <h2 class="text-light text-center mb-3">¿Quiénes somos?</h2>
       <hr color="lightseagreen" class="text-info font-weight-bold mx-5" />
       <div class="row m-3 pt-3">
@@ -324,8 +321,28 @@
       crossorigin="anonymous"
     ></script>
 
- <!--mi script js-->    
- <script src="assets/js/script.js"></script>
+    <!--mi script js-->
+    <script src="assets/js/script.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
   </body>
 </html>

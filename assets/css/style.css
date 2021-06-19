@@ -16,3 +16,6 @@ body {
     font-weight: bolder;
     vertical-align: middle;
 }
+html {
+    scroll-behavior: smooth;
+  }
