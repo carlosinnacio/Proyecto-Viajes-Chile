@@ -45,8 +45,9 @@
         alt="logo-viajes-chile"
       />
       <a class="navbar-brand text-light" href="#">Viajes Chile</a>
+      
       <button
-        class="navbar-toggler"
+        class="navbar-toggler text-light"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -59,23 +60,21 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item active">
-            <a class="nav-link text-light" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-link text-light" href="#Inicio"
+              >Inicio <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Features</a>
+            <a class="nav-link text-light" href="#quienes-somos">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Pricing</a>
+            <a class="nav-link text-light" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link text-light"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
+              href="#contacto"
+              >Contacto</a
             >
           </li>
         </ul>
@@ -84,7 +83,7 @@
 
     <!--Carousel-->
     <div
-      id="carouselExampleControls"
+      id="Inicio"
       class="carousel slide"
       data-ride="carousel"
     >
@@ -130,13 +129,13 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-   <!--Quienes Somos-->
+    <!--Quienes Somos-->
     <section id="quienes-somos" class="w-100 m-0 py-5 bg-dark text-white">
       <h2 class="text-light text-center mb-3">¿Quiénes somos?</h2>
       <hr color="lightseagreen" class="text-info font-weight-bold mx-5" />
       <div class="row m-3 pt-3">
         <div class="col mx-3">
-          <i class="fas fa-plane w-100 bg-info text-center py-3"></i>
+          <i class="fas fa-plane fa-2x w-100 bg-info text-center py-3"></i>
           <p class="text-white text-left w-100 mt-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
             dignissimos sunt recusandae quaerat adipisci voluptas necessitatibus
@@ -171,10 +170,10 @@
             sunt facere excepturi, cum tempore. Nulla quod nihil laboriosam
             neque animi odio vel aspernatur blanditiis, fugiat illo porro!
           </p>
-          <i class="fas fa-mountain w-100 bg-info text-center py-3"></i>
+          <i class="fas fa-mountain fa-2x w-100 bg-info text-center py-3"></i>
         </div>
         <div class="col mx-3">
-          <i class="fas fa-route w-100 bg-info text-center py-3"></i>
+          <i class="fas fa-route fa-2x w-100 bg-info text-center py-3"></i>
           <p class="text-white text-left w-100 mt-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
             dignissimos sunt recusandae quaerat adipisci voluptas necessitatibus
@@ -197,47 +196,121 @@
 
     <!--Destacados-->
     <section id="destacados" class="bg-dark py-3 text-center w-100">
-        <h2 class="text-light text-center mb-3">Destacados</h2>
-        <hr color="lightseagreen" class="text-info font-weight-bold mx-5" />
-        <div class="card-deck text-light mx-5">
-            <div class="card">
-              <img src="assets/img/card1.jpg" class="card-img-top" alt="lago-pehoe">
-              <div class="card-body bg-info">
-                <h5 class="card-title">Torres del Paine</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/card2.jpg" class="card-img-top" alt="san-pedro">
-              <div class="card-body bg-info">
-                <h5 class="card-title">Laguna Escondida</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            
-            </div>
-            <div class="card">
-              <img src="assets/img/card3.jpg" class="card-img-top" alt="laguna">
-              <div class="card-body bg-info">
-                <h5 class="card-title">Laguna Salar</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              
-            </div>
-
-            <div class="card">
-                <img src="assets/img/card4.jpg" class="card-img-top" alt="bosque">
-                <div class="card-body bg-info">
-                  <h5 class="card-title">Selva Valdiviana</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                
-              </div>
+      <h2 class="text-light text-center mb-3">Destacados</h2>
+      <hr color="lightseagreen" class="text-info font-weight-bold mx-5" />
+      <div class="card-deck text-light mx-5">
+        <div class="card">
+          <img
+            src="assets/img/card1.jpg"
+            class="card-img-top"
+            alt="lago-pehoe"
+          />
+          <div class="card-body bg-info">
+            <h5 class="card-title">Torres del Paine</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/card2.jpg"
+            class="card-img-top"
+            alt="san-pedro"
+          />
+          <div class="card-body bg-info">
+            <h5 class="card-title">Laguna Escondida</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/card3.jpg" class="card-img-top" alt="laguna" />
+          <div class="card-body bg-info">
+            <h5 class="card-title">Laguna Salar</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+        </div>
 
-
+        <div class="card">
+          <img src="assets/img/card4.jpg" class="card-img-top" alt="bosque" />
+          <div class="card-body bg-info">
+            <h5 class="card-title">Selva Valdiviana</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--contacto-->
+    <section id="contacto" class="bg-dark py-5 text-center w-100">
+      <h2 class="text-light text-center my-3">Contacto</h2>
+      <hr color="lightseagreen" class="text-info font-weight-bold mx-5" />
+      <div
+        class="typeform-widget mx-5 container"
+        data-url="https://form.typeform.com/to/S5aJh4cP?typeform-medium=embed-snippet"
+        style="width: 100%; height: 500px"
+      ></div>
+      <script>
+        (function () {
+          var qs,
+            js,
+            q,
+            s,
+            d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q);
+          }
+        })();
+      </script>
+    </section>
 
+    <!--Footer-->
+    <footer class="bg-info py-2">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="text-light text-weight-bold text-footer mt-2">
+            VIAJES CHILE
+          </h2>
+        </div>
+
+        <div class="col text-center text-light">
+          <a href="https://github.com/" target="_blank">
+            <i class="fab fa-github-square fa-3x m-2 text-light"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin fa-3x m-2 text-light"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter-square fa-3x m-2 text-light"></i>
+          </a>
+          <a href="https://facebook.com/" target="_blank">
+            <i class="fab fa-facebook-square fa-3x m-2 text-light"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!--Bundle BS-->
     <script

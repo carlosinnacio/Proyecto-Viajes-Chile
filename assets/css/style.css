@@ -11,6 +11,8 @@ body {
     margin-right: 1%;
 }
 
-hr {
-    color: lightseagreen;
+
+.texto-footer {
+    font-weight: bolder;
+    vertical-align: middle;
 }
